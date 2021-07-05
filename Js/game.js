@@ -71,7 +71,9 @@ function Reset()
     respuesta.textContent = "Respuestas:";
     textbox.value = "";
     textbox.disabled = false;
+    textbox.focus();
     pista.classList.add("hidden"); 
     boton.textContent = "Comprobar"
-    boton.addEventListener("click",Comprobar); 
+    boton.addEventListener("click",Comprobar);
+    boton.removeEventListener("click",Reset); 
 }

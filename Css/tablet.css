@@ -1,26 +1,7 @@
-*
-{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body
-{
-    block-size: 100vh;
-    background-image: linear-gradient(337deg, #858585,#f6cc6b);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Helvetica,sans-serif;
-
-}
-
-
 
 .box
 {
-    block-size: 50%;
+    block-size: 90%;
     inline-size: 50%;
     background-color: #05050675;
     border-radius: 50px;
@@ -42,7 +23,7 @@ h1
 p:first-of-type
 {
     inline-size: 80%;
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 18px;
     color: #ffffffc9;
 }
@@ -64,34 +45,20 @@ p:nth-of-type(2)
 p:nth-of-type(3)
 {
     block-size: 40px;
-    inline-size: 50%;
+    inline-size: 80%;
     background-color: white;
     border-radius: 4px;
     text-align: center;
-    padding-top: 5px;
-    font-size: 1.5em;
+    padding-top: 8px;
+    font-size: 1.1em;
 }
 
-.good
-{
-    color: green;
-}
-
-.bad
-{
-    color: red;
-}
-
-p.hidden
-{
-
-    visibility: hidden;
-}
 
 .form
 {
     inline-size: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -100,7 +67,7 @@ p.hidden
 {
     block-size: 50px;
     inline-size: 40%;
-    margin-right: 40px;
+    margin-right: 20px;
     outline: none;
     border: none;
     background-color: #0000;
@@ -114,7 +81,7 @@ p.hidden
 button
 {
     block-size: 50px;
-    inline-size: 30%;
+    inline-size: 35%;
     border: 3px solid white;
     border-radius: 4px;
     background-color: rgba(255, 255, 255, 0.116);
@@ -124,18 +91,5 @@ button
 
 input::placeholder
 {
-    color: rgba(255, 255, 255, 0.555);
-    text-align: center;
-    font-size: medium;
-}
-
-
-@media screen and (min-width: 1080px) 
-{
-  .box
-  {
-      block-size: 50%;
-      inline-size: 50%;
-  }
-    
+    font-size: 0.6em;
 }
